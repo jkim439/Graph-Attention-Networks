@@ -1,0 +1,191 @@
+/Users/jkim/Classes/DTM/Project/Python/venv/bin/python /Users/jkim/Classes/DTM/Project/Python/GAT.py
+2021-04-17 12:00:18.607326: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-04-17 12:00:18.607632: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+      target   source
+0         35     1033
+1         35   103482
+2         35   103515
+3         35  1050679
+4         35  1103960
+...      ...      ...
+5424  853116    19621
+5425  853116   853155
+5426  853118  1140289
+5427  853155   853118
+5428  954315  1155073
+
+[5429 rows x 2 columns]
+           id  w0  w1  w2  ...  w1430  w1431  w1432                 subject
+0       31336   0   0   0  ...      0      0      0         Neural_Networks
+1     1061127   0   0   0  ...      0      0      0           Rule_Learning
+2     1106406   0   0   0  ...      0      0      0  Reinforcement_Learning
+3       13195   0   0   0  ...      0      0      0  Reinforcement_Learning
+4       37879   0   0   0  ...      0      0      0   Probabilistic_Methods
+...       ...  ..  ..  ..  ...    ...    ...    ...                     ...
+2703  1128975   0   0   0  ...      0      0      0      Genetic_Algorithms
+2704  1128977   0   0   0  ...      0      0      0      Genetic_Algorithms
+2705  1128978   0   0   0  ...      0      0      0      Genetic_Algorithms
+2706   117328   0   0   0  ...      0      0      0              Case_Based
+2707    24043   0   0   0  ...      0      0      0         Neural_Networks
+
+[2708 rows x 1435 columns]
+         w0  w1  w2  w3  w4  ...  w1429  w1430  w1431  w1432                 subject
+id                           ...
+31336     0   0   0   0   0  ...      0      0      0      0         Neural_Networks
+1061127   0   0   0   0   0  ...      0      0      0      0           Rule_Learning
+1106406   0   0   0   0   0  ...      0      0      0      0  Reinforcement_Learning
+13195     0   0   0   0   0  ...      0      0      0      0  Reinforcement_Learning
+37879     0   0   0   0   0  ...      0      0      0      0   Probabilistic_Methods
+...      ..  ..  ..  ..  ..  ...    ...    ...    ...    ...                     ...
+1128975   0   0   0   0   0  ...      0      0      0      0      Genetic_Algorithms
+1128977   0   0   0   0   0  ...      0      0      0      0      Genetic_Algorithms
+1128978   0   0   0   0   0  ...      0      0      0      0      Genetic_Algorithms
+117328    0   0   0   0   1  ...      0      0      0      0              Case_Based
+24043     0   0   0   0   0  ...      0      0      0      0         Neural_Networks
+
+[2708 rows x 1434 columns]
+         w0  w1  ...  subject_Rule_Learning  subject_Theory
+id               ...
+31336     0   0  ...                      0               0
+1061127   0   0  ...                      1               0
+1106406   0   0  ...                      0               0
+13195     0   0  ...                      0               0
+37879     0   0  ...                      0               0
+...      ..  ..  ...                    ...             ...
+1128975   0   0  ...                      0               0
+1128977   0   0  ...                      0               0
+1128978   0   0  ...                      0               0
+117328    0   0  ...                      0               0
+24043     0   0  ...                      0               0
+
+[2708 rows x 1440 columns]
+StellarGraph: Undirected multigraph
+ Nodes: 2708, Edges: 5429
+
+ Node types:
+  paper: [2708]
+    Features: float32 vector, length 1440
+    Edge types: paper-cites->paper
+
+ Edge types:
+    paper-cites->paper: [5429]
+        Weights: all 1 (default)
+        Features: none
+2021-04-17 12:00:20.494258: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+Epoch 1/50
+1/1 - 3s - loss: 1.9842 - acc: 0.1350 - val_loss: 1.7924 - val_acc: 0.4529
+Epoch 2/50
+1/1 - 0s - loss: 1.7577 - acc: 0.3750 - val_loss: 1.6495 - val_acc: 0.4743
+Epoch 3/50
+1/1 - 0s - loss: 1.6616 - acc: 0.4450 - val_loss: 1.5262 - val_acc: 0.4843
+Epoch 4/50
+1/1 - 0s - loss: 1.5846 - acc: 0.4450 - val_loss: 1.4185 - val_acc: 0.5286
+Epoch 5/50
+1/1 - 0s - loss: 1.3395 - acc: 0.5600 - val_loss: 1.3196 - val_acc: 0.6086
+Epoch 6/50
+1/1 - 0s - loss: 1.3026 - acc: 0.5950 - val_loss: 1.2283 - val_acc: 0.6814
+Epoch 7/50
+1/1 - 0s - loss: 1.1873 - acc: 0.6550 - val_loss: 1.1425 - val_acc: 0.7314
+Epoch 8/50
+1/1 - 0s - loss: 1.1906 - acc: 0.5950 - val_loss: 1.0632 - val_acc: 0.7771
+Epoch 9/50
+1/1 - 0s - loss: 1.0193 - acc: 0.7000 - val_loss: 0.9901 - val_acc: 0.8214
+Epoch 10/50
+1/1 - 0s - loss: 1.0006 - acc: 0.7250 - val_loss: 0.9231 - val_acc: 0.8429
+Epoch 11/50
+1/1 - 0s - loss: 0.9127 - acc: 0.7850 - val_loss: 0.8618 - val_acc: 0.8671
+Epoch 12/50
+1/1 - 0s - loss: 0.8317 - acc: 0.7800 - val_loss: 0.8054 - val_acc: 0.8700
+Epoch 13/50
+1/1 - 0s - loss: 0.8152 - acc: 0.8050 - val_loss: 0.7552 - val_acc: 0.8771
+Epoch 14/50
+1/1 - 0s - loss: 0.7836 - acc: 0.8450 - val_loss: 0.7107 - val_acc: 0.8814
+Epoch 15/50
+1/1 - 0s - loss: 0.6947 - acc: 0.8100 - val_loss: 0.6718 - val_acc: 0.8843
+Epoch 16/50
+1/1 - 0s - loss: 0.7755 - acc: 0.8000 - val_loss: 0.6378 - val_acc: 0.8871
+Epoch 17/50
+1/1 - 0s - loss: 0.7498 - acc: 0.8350 - val_loss: 0.6083 - val_acc: 0.8914
+Epoch 18/50
+1/1 - 0s - loss: 0.6532 - acc: 0.8350 - val_loss: 0.5826 - val_acc: 0.8929
+Epoch 19/50
+1/1 - 0s - loss: 0.6382 - acc: 0.8450 - val_loss: 0.5602 - val_acc: 0.8943
+Epoch 20/50
+1/1 - 0s - loss: 0.5746 - acc: 0.8650 - val_loss: 0.5402 - val_acc: 0.8957
+Epoch 21/50
+1/1 - 0s - loss: 0.6715 - acc: 0.8000 - val_loss: 0.5225 - val_acc: 0.8929
+Epoch 22/50
+1/1 - 0s - loss: 0.5773 - acc: 0.8400 - val_loss: 0.5068 - val_acc: 0.8886
+Epoch 23/50
+1/1 - 0s - loss: 0.5990 - acc: 0.8350 - val_loss: 0.4930 - val_acc: 0.8886
+Epoch 24/50
+1/1 - 0s - loss: 0.5915 - acc: 0.8300 - val_loss: 0.4814 - val_acc: 0.8871
+Epoch 25/50
+1/1 - 0s - loss: 0.6251 - acc: 0.8000 - val_loss: 0.4712 - val_acc: 0.8871
+Epoch 26/50
+1/1 - 0s - loss: 0.4663 - acc: 0.9150 - val_loss: 0.4617 - val_acc: 0.8886
+Epoch 27/50
+1/1 - 0s - loss: 0.5287 - acc: 0.8500 - val_loss: 0.4539 - val_acc: 0.8886
+Epoch 28/50
+1/1 - 0s - loss: 0.6569 - acc: 0.7800 - val_loss: 0.4477 - val_acc: 0.8886
+Epoch 29/50
+1/1 - 0s - loss: 0.4781 - acc: 0.8950 - val_loss: 0.4427 - val_acc: 0.8886
+Epoch 30/50
+1/1 - 0s - loss: 0.4965 - acc: 0.8650 - val_loss: 0.4378 - val_acc: 0.8900
+Epoch 31/50
+1/1 - 0s - loss: 0.5108 - acc: 0.8850 - val_loss: 0.4338 - val_acc: 0.8900
+Epoch 32/50
+1/1 - 0s - loss: 0.5478 - acc: 0.8500 - val_loss: 0.4306 - val_acc: 0.8900
+Epoch 33/50
+1/1 - 0s - loss: 0.4342 - acc: 0.9100 - val_loss: 0.4270 - val_acc: 0.8914
+Epoch 34/50
+1/1 - 0s - loss: 0.4935 - acc: 0.8600 - val_loss: 0.4239 - val_acc: 0.8929
+Epoch 35/50
+1/1 - 0s - loss: 0.4335 - acc: 0.8750 - val_loss: 0.4205 - val_acc: 0.8929
+Epoch 36/50
+1/1 - 0s - loss: 0.4895 - acc: 0.8700 - val_loss: 0.4172 - val_acc: 0.8900
+Epoch 37/50
+1/1 - 0s - loss: 0.3523 - acc: 0.8800 - val_loss: 0.4133 - val_acc: 0.8914
+Epoch 38/50
+1/1 - 0s - loss: 0.4576 - acc: 0.8600 - val_loss: 0.4105 - val_acc: 0.8900
+Epoch 39/50
+1/1 - 0s - loss: 0.4906 - acc: 0.8550 - val_loss: 0.4079 - val_acc: 0.8886
+Epoch 40/50
+1/1 - 0s - loss: 0.5245 - acc: 0.8600 - val_loss: 0.4057 - val_acc: 0.8914
+1/1 [==============================] - 0s 41ms/step - loss: 0.5645 - acc: 0.8761
+
+Test Set Metrics:
+	loss: 0.5645
+	acc: 0.8761
+2021-04-17 12:00:28.830545: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+                      Predicted                    True
+31336           Neural_Networks         Neural_Networks
+1061127           Rule_Learning           Rule_Learning
+1106406  Reinforcement_Learning  Reinforcement_Learning
+13195    Reinforcement_Learning  Reinforcement_Learning
+37879     Probabilistic_Methods   Probabilistic_Methods
+1126012   Probabilistic_Methods   Probabilistic_Methods
+1107140  Reinforcement_Learning                  Theory
+1102850         Neural_Networks         Neural_Networks
+31349           Neural_Networks         Neural_Networks
+1106418                  Theory                  Theory
+1123188         Neural_Networks         Neural_Networks
+1128990         Neural_Networks      Genetic_Algorithms
+109323    Probabilistic_Methods   Probabilistic_Methods
+217139               Case_Based              Case_Based
+31353           Neural_Networks         Neural_Networks
+32083           Neural_Networks         Neural_Networks
+1126029  Reinforcement_Learning  Reinforcement_Learning
+1118017         Neural_Networks         Neural_Networks
+49482           Neural_Networks         Neural_Networks
+753265          Neural_Networks         Neural_Networks
+Embedding layer: graph_attention_sparse, output shape (1, 2708, 64)
+(1, 2708, 64)
+7
+Mutual Information: 1.334
+Normalized Mutual Information: 0.725
+Adjusted Mutual Information: 0.724
+(1, 2708, 64)
+
+Process finished with exit code 0
